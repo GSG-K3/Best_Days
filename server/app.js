@@ -7,14 +7,14 @@ const getData = require('../database/queries/getdata')
 const postData = require('../database/queries/postdata')
 
 app.use(express.static(path.join(__dirname,'..','public'),{maxAge : '30d'}))
-app.get('/:date',(req , res)=>
-   getData((req,res)=>{
+app.get('/date',(req , response)=>
+   getData((err,req,res)=>{
        if(err){ console.log('server err')}
        else {response.send(res)}
 
    }))
    
-app.post('/:event', (req , res)=>{
+app.post('/:event', (req , responce)=>{
     postData((req , res)=>{
         console.log(req.note)
     })
