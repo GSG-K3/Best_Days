@@ -7,7 +7,7 @@ Website:
 
 ## User Story 
 - As a user ,you can search event and this application view  what  the international events in this days.
-- As a user , you can  add  a note in this application like what would you wont do in this days .
+- As a user , you can  add  a note in this application like what would you do in this days .
 
 
 ## Database schema 
