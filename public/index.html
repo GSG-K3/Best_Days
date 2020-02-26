@@ -12,18 +12,25 @@
        <p id ="today_date"></p>
    </section>
    <section >
-     <ul id='today_event'>
+     <ul id='today_event' class="con">
 
      </ul>
    </section>
+   <section id="post_section">
+       <form action="/postaction" method="POST">
+           <input type="text" id="event_value" name="event">
+           <textarea id="event_note" name="note"></textarea>
+           <button type="submit" id="add_button">ADD</button>
+       </form>
+   </section>
    <section>
-       <form>
-           <input type="date" id="form_date">
+       <form id="date_form">
+           <input type="date" id="form_date" >
            <input type="text" id="form_text">
            <button type="submit" id="form_button">GO</button>
        </form>
    </section>
    <script src = '/js/callback.js'></script>
-    <script src = "/js/index.js"></script>
+    <script src = "js/index.js"></script>
 </body>
 </html>

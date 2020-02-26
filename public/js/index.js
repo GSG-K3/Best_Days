@@ -1,14 +1,12 @@
+let today = new Date();
+var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
 window.addEventListener('load',() =>{
-        let today = new Date();
-        var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-        console.log(date);
      
         let today_date = document.getElementById('today_date');
         today_date.innerHTML= date
 
     apiCall('get',"/date",res => {
         let GetSec = document.getElementById('today_event');
-        console.log('rtdgdgdjghgh',res)
         
 
         
@@ -30,5 +28,10 @@ window.addEventListener('load',() =>{
         });
     
 })
+
+// const addBtn = document.getElementById("add_button");
+// addBtn.addEventListener('click',()=>{
+
+// })
 
 
