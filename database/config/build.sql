@@ -11,6 +11,8 @@ CREATE TABLE IF NOT EXISTS calender (
 
 INSERT INTO calender (event_name, event_date) VALUES ('Christmas', '2000-01-01');
 INSERT INTO calender (event_name, event_date) VALUES ('Neda BD', '2000-01-01');
+INSERT INTO calender (event_name, event_date, note) VALUES ('test row', '2020-02-26', 'Helllllooooo');
+INSERT INTO calender (event_name, event_date, note) VALUES ('test row2', '2020-02-26','Its meeeeeeeee');
 INSERT INTO calender (event_name, event_date) VALUES ('International Day of Commemoration in Memory of the Victims of the Holocaus', '2000-01-027' );
 INSERT iNTO calender (event_name, event_date) VALUES ('World Cancer Day', '2000-02-04');
 INSERT iNTO calender (event_name, event_date) VALUES ('International Day of Women and Girls in Science', '2000-02-11');

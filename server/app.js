@@ -6,13 +6,21 @@ const errors = require('./controller/error');
 const getData = require('../database/queries/getdata')
 const postData = require('../database/queries/postdata')
 
-app.use(express.static(path.join(__dirname,'..','public'),{maxAge : '30d'}))
+app.use(express.static(path.join(__dirname,'..','public')))
+
+
+
+
 app.get('/date',(req , response)=>
-   getData((err,req,res)=>{
+   getData((err,res)=>{
+       console.log('gg', res)
        if(err){ console.log('server err')}
        else {response.send(res)}
 
+       
+
    }))
+
    
 app.post('/:event', (req , responce)=>{
     postData((req , res)=>{
