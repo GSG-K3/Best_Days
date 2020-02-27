@@ -8,14 +8,13 @@ const postData = require('../database/queries/postdata');
 const bodyParser = require('body-parser')
 
 app.use(bodyParser.urlencoded({extended:false}))
+
 app.use(express.static(path.join(__dirname,'..','public')))
 
 app.get('/date',(req , response)=>
    getData((err,res)=>{
        if(err){ console.log('server err')}
        else {response.send(res)}
-
-       
 
    }))
 
@@ -24,6 +23,13 @@ app.post('/postaction', (req , res)=>{
     const reqBody =req.body;
     console.log('ggggg',reqBody);
      postData(reqBody);
+    res.redirect('/');
+})
+
+app.post('/searchData',(req,res) =>{
+    const reqbody = req.body;
+    console.log('bg',reqbody);
+    
     res.redirect('/');
 })
 app.use(errors.notFound);
