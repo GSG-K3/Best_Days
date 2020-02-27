@@ -1,8 +1,7 @@
 const connection = require('../config/connection');
 const mainPage = require('../../public/getUserData')
 const postdata = userData =>{
-   console.log('00000000000000000',userData);
-    // let myDate =window.location.pathname;
+  
     const today = new Date();
     const event_date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
     const { event, note } = userData;

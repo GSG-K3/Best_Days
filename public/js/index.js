@@ -11,7 +11,7 @@ window.addEventListener('load',() =>{
 
         
         res.forEach(element => {
-            let todayEvent = document.createElement('h2');
+            let todayEvent = document.createElement('h3');
             let li = document.createElement('li');
             
             todayEvent.innerHTML = element.event_name;

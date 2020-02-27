@@ -4,31 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet">
     <title>best days app</title>
 </head>
 <body>
-   <section >
-       <h1>Best Days</h1>
-       <p id ="today_date"></p>
+   <section class="header">
+       <h1 >Best Days</h1>
+       <i class="fas fa-calendar-alt"></i>
+       <p id ="today_date" class="header_date"></p>
    </section>
-   <section >
-     <ul id='today_event' class="con">
+   <section class="list_section_style">
+     <ul id='today_event'>
 
      </ul>
    </section>
-   <section id="post_section">
-       <form action="/postaction" method="POST">
-           <input type="text" id="event_value" name="event">
-           <textarea id="event_note" name="note"></textarea>
-           <button type="submit" id="add_button">ADD</button>
+   <br>
+   <section id="post_section" class="post_section__style">
+       <form action="/postaction" method="POST" class="add_form">
+           <label for="event">EVENT</label>
+           <input type="text" id="event_value" name="event" class="post_input">
+           <label for="note">NOTE</label>
+           <textarea id="event_note" name="note" class="post_input"></textarea>
+           <button type="submit" id="add_button" class="buttons_style">ADD</button>
        </form>
    </section>
-   <section>
-       <form action = '/searchData' method="POST" id="date_form">
-           <input type="date" id="form_date" name = 'date' >
-           <button type="submit" id="form_button">GO</button>
+   <br>
+   <section class="post_section__style">
+       <form action = '/searchData' method="POST" id="date_form" class="search_form_style">
+           <label for="date">SEARCH</label>
+           <input type="date" id="form_date" name = 'date' class="post_input">
+           <button type="submit" id="form_button" class="buttons_style">GO</button>
        </form>
    </section>
+   <br>
+   <br>
+
+   <footer class="footer_style">
+       <div>© 2020 Copyright:<a>SBNB.CO</a></div>
+   </footer>
    <script src = '/js/callback.js'></script>
     <script src = "js/index.js"></script>
 </body>
