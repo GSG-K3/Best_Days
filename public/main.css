@@ -1,4 +1,95 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css);
 .con {
-  
+  margin: 10px 10px 10px 10px;
+  border: dashed grey;
+  box-shadow: 5px 5px 5px grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   list-style: none;
+}
+body{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: rgb(210, 202, 216);
+  justify-content: center;
+}
+.header{
+  font-size: 30px;
+  text-shadow: 4px 4px 4px rgb(137, 110, 160);
+  font-family: 'Trade Winds' ;
+  position:sticky;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(210, 202, 216) ;
+  
+}
+.header_date{
+  font-size: 28px;
+  font-family: 'Trade Winds' ;
+}
+.list_section_style{
+  /* box-shadow: 5px 5px 5px grey; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
+.post_input{
+  font-size: 20px;
+  border: unset grey;
+  margin: 10px 10px 10px 10px;
+  height: 25px;
+  box-shadow: 5px 5px 5px grey;
+}
+.buttons_style{
+  font-family: 'Trade Winds' ;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  outline: none;
+    position: relative;
+  font-size: 20px;
+  border-radius: 8px;
+  vertical-align: bottom;
+  color: wheat;
+  background-color:rgb(137, 110, 160);
+}
+.buttons_style:hover{
+  background: transparent;
+  color: black; 
+}
+
+.add_form{
+  display: flex;
+  flex-direction: column;
+  font-size: 20px ;
+  justify-content: center;
+
+}
+.post_section__style{
+  display: flex;
+  justify-content: center;
+  font-family: 'Trade Winds' ;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.search_form_style{
+  font-family: 'Trade Winds' ;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 20px;
+  
+  
+}
+
+.footer_style{
+  background-color:rgb(137, 110, 160);
 }
