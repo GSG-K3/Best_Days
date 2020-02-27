@@ -1,6 +1,6 @@
 # Best_Days
 
-heroku app : https://besthappydays.herokuapp.com/ 
+
 
 
 The app is an easy way to add events to a specific date .
