@@ -28,12 +28,10 @@
            <button type="submit" id="add_button" class="buttons_style">ADD</button>
        </form>
    </section>
-   <br>
-   <section class="post_section__style">
-       <form id="date_form" class="search_form_style">
-           <label for="date">SEARCH</label>
-           <input type="date" id="form_date" name="date" class="post_input">
-           <button type="submit" id="form_button" class="buttons_style">GO</button>
+   <section>
+       <form action = '/searchData' method="POST" id="date_form">
+           <input type="date" id="form_date" name = 'date' >
+           <button type="submit" id="form_button">GO</button>
        </form>
    </section>
    <br>
